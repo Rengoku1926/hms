@@ -1,11 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "start": "node build/index",
+    "start": "node build/index.js",
     "build": "tsc -p .",
-    "dev": "tsc-watch --onSuccess \" npm start\""
+    "dev": "tsc-watch --onSuccess \"npm start\""
   },
   "author": "",
   "license": "ISC",
