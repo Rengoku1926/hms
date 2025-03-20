@@ -14,5 +14,5 @@ app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 // Mount all routes under the /api prefix
 app.use("/api", routes_1.default);
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
+app.listen(PORT, '0.0.0.0', () => console.log(`Server running on port ${PORT}`));
